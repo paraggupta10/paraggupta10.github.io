@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Parag Gupta - DevOps Engineer & Cloud Architect with 8+ years of experience in Cloud Computing, Kubernetes, and Infrastructure as Code.">
+  <title>Parag Gupta | DevOps Engineer & Cloud Architect</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+  <!-- Header with animated hero section -->
+  <header class="hero">
+    <div class="navbar">
+      <div class="logo">
+        <a href="#home">PG</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="javascript:void(0)" class="resume-link" onclick="openResume()">Resume</a></li>
+        </ul>
+      </nav>
+      <div class="menu-btn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+    
+    <div id="home" class="hero-content">
+      <div class="profile-slideshow">
+        <div class="slide active" style="background-image: url('my_photos/pic1.jpeg')"></div>
+        <div class="slide" style="background-image: url('my_photos/pic2_fixed.jpeg')"></div>
+        <div class="slide" style="background-image: url('my_photos/pic3.jpeg')"></div>
+      </div>
+      <div class="hero-text">
+        <p class="subtitle">Hello, I'm</p>
+        <h1>Parag Gupta</h1>
+        <div class="typed-text">DevOps Engineer • Cloud Architect • SRE</div>
+        <p class="description">Dedicated to building resilient, scalable infrastructure and innovative DevOps solutions</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn primary">Contact Me</a>
+          <a href="#projects" class="btn secondary">View Projects</a>
+          <a href="javascript:void(0)" onclick="openResume()" class="btn secondary resume-btn">Resume</a>
+        </div>
+        <div class="social-icons">
+          <a href="https://linkedin.com/in/parag-gupta10" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/paraggupta10" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="mailto:gupta.parag@outlook.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="section-content">
+        <div class="about-text">
+          <p>I'm a <span class="highlight">DevOps Engineer</span> with 8+ years of experience, passionate about pioneering advances in Cloud Computing and Networking. I thrive on innovation and mastering complex technologies, bringing expertise in Unix administration, container management, security, and cloud platforms.</p>
+          <p>My work is driven by resourcefulness, productivity, and a commitment to turning imaginative solutions into reality.</p>
+          <div class="key-skills">
+            <div class="skill-category">
+              <h3><i class="fas fa-code"></i> Languages</h3>
+              <p>Python, Shell scripting</p>
+            </div>
+            <div class="skill-category">
+              <h3><i class="fas fa-server"></i> Unix</h3>
+              <p>CentOS, Ubuntu</p>
+            </div>
+            <div class="skill-category">
+              <h3><i class="fas fa-network-wired"></i> Networking</h3>
+              <p>KVM, Libvirt, QEMU, IP tables</p>
+            </div>
+            <div class="skill-category">
+              <h3><i class="fas fa-lock"></i> Security</h3>
+              <p>Security Baseline, Vulnerability Management, IAM</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-boxes">
+          <div class="info-box">
+            <h3>8+</h3>
+            <p>Years of Experience</p>
+          </div>
+          <div class="info-box">
+            <h3>20+</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="info-box">
+            <h3>5+</h3>
+            <p>Cloud Platforms</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="achievements section">
+    <div class="container">
+      <h2 class="section-title">Key Achievements</h2>
+      <div class="achievements-container">
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Cost Optimization Impact</h3>
+          <p>Saved approximately $500K through cloud cost optimizations, infrastructure improvements, and operational efficiencies across various roles.</p>
+        </div>
+        
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3>Innovative Solutions</h3>
+          <p>Received the "Rising Star Award" for developing Netbox, a custom tool to track resources and IP allocations in data centers, enhancing infrastructure management.</p>
+        </div>
+        
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>Publications</h3>
+          <p>Authored technical blogs on Kubernetes, Django, and AWS CodeDeploy, providing insights on infrastructure automation and high availability setups.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="work-tabs">
+        <div class="work-tab-buttons">
+          <button class="work-tab-btn active" data-target="adobe">
+            <img src="images/adobe-logo.png" alt="Adobe" class="work-tab-btn-icon">
+          </button>
+          <button class="work-tab-btn" data-target="medianet">
+            <img src="images/medianet-logo.png" alt="Media.net" class="work-tab-btn-icon">
+          </button>
+          <button class="work-tab-btn" data-target="tokopedia">
+            <img src="images/tokopedia-logo.png" alt="Tokopedia" class="work-tab-btn-icon">
+          </button>
+          <button class="work-tab-btn" data-target="paytm">
+            <img src="images/paytm-logo.png" alt="Paytm" class="work-tab-btn-icon">
+          </button>
+          <button class="work-tab-btn" data-target="ttndigi">
+            <img src="images/tothenew-logo.png" alt="TO THE NEW" class="work-tab-btn-icon">
+          </button>
+          
+          <div class="exp-navigation work-exp-only">
+            <button class="exp-nav-btn exp-prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="exp-nav-btn exp-next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Adobe Tab -->
+        <div id="adobe" class="work-tab-content active">
+          <div class="work-header">
+            <h3 class="work-title">Computer Scientist</h3>
+            <div class="work-company"><i class="fas fa-building"></i> Adobe Systems</div>
+            <div class="work-duration">Dec 2021 - Present</div>
+          </div>
+          <div class="work-description">
+            <ul>
+              <li>Design and secure Cloud Deployments & Adobe Applications with Guardrails</li>
+              <li>Develop a Streamlit-based dashboard to audit all configuration files for AJO</li>
+              <li>Automate Big Data Components deployment using Python & Airflow</li>
+              <li>Streamlining the entire tech stack led to annual savings of $376,000</li>
+              <li>Develop Disaster Recovery solutions for revenue impacting components in Sophia</li>
+            </ul>
+          </div>
+          <div class="tech-used">
+            <h4>Technologies Used</h4>
+            <div class="tech-stack">
+              <span>Python</span>
+              <span>Streamlit</span>
+              <span>AWS</span>
+              <span>Azure</span>
+              <span>Airflow</span>
+              <span>Kubernetes</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Media.net Tab -->
+        <div id="medianet" class="work-tab-content">
+          <div class="work-header">
+            <h3 class="work-title">Site Reliability Engineer</h3>
+            <div class="work-company"><i class="fas fa-building"></i> Media.net</div>
+            <div class="work-duration">Feb 2021 - Dec 2021</div>
+          </div>
+          <div class="work-description">
+            <ul>
+              <li>Designed & Deployed a Reliable and Scalable Kubernetes Cluster (v1.22) on Data-Centre</li>
+              <li>Optimised & Benchmarked in-house java applications with instrumentation monitoring</li>
+              <li>Revamped infrastructure monitoring to speed cloud migration and predict inventory needs</li>
+              <li>Introduced Service Mesh for service discovery in complex networking environments</li>
+            </ul>
+          </div>
+          <div class="tech-used">
+            <h4>Technologies Used</h4>
+            <div class="tech-stack">
+              <span>Kubernetes</span>
+              <span>Docker</span>
+              <span>Prometheus</span>
+              <span>Grafana</span>
+              <span>Istio</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Tokopedia Tab -->
+        <div id="tokopedia" class="work-tab-content">
+          <div class="work-header">
+            <h3 class="work-title">Senior Engineer DataOps</h3>
+            <div class="work-company"><i class="fas fa-building"></i> Tokopedia</div>
+            <div class="work-duration">Oct 2019 - Feb 2021</div>
+          </div>
+          <div class="work-description">
+            <ul>
+              <li>Designed TechStack on GCP for DataEngineering Services</li>
+              <li>Setup Jenkins Pipelines for Continuous Integration and Deployments</li>
+              <li>Reduced GCP costs by 30%-40% through optimisation initiatives</li>
+              <li>Setup Highly Available Airflow Clusters for data insights</li>
+            </ul>
+          </div>
+          <div class="tech-used">
+            <h4>Technologies Used</h4>
+            <div class="tech-stack">
+              <span>GCP</span>
+              <span>Alibaba Cloud</span>
+              <span>Jenkins</span>
+              <span>Airflow</span>
+              <span>Vault</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Paytm Tab -->
+        <div id="paytm" class="work-tab-content">
+          <div class="work-header">
+            <h3 class="work-title">DevOps Engineer</h3>
+            <div class="work-company"><i class="fas fa-building"></i> Paytm</div>
+            <div class="work-duration">Aug 2018 - Aug 2019</div>
+          </div>
+          <div class="work-description">
+            <ul>
+              <li>Managed hybrid infrastructure across AWS and on-premise data centers</li>
+              <li>Migrated services from on-premise to cloud for cost optimization</li>
+              <li>Implemented high-availability clusters for critical payment services</li>
+              <li>Automated deployment workflows for faster release cycles</li>
+              <li>Built and managed an OpenStack cluster with over 4,000 cores for the payments team's QA environment, alongside a 50TB Elasticsearch cluster for managing large-scale user data, ensuring high availability and performance</li>
+              <li>Automated infrastructure provisioning and workloads using Salt and Ansible, significantly improving operational efficiency</li>
+            </ul>
+          </div>
+          <div class="tech-used">
+            <h4>Technologies Used</h4>
+            <div class="tech-stack">
+              <span>AWS</span>
+              <span>Docker</span>
+              <span>Kubernetes</span>
+              <span>ELK</span>
+              <span>Salt</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- TO THE NEW Tab -->
+        <div id="ttndigi" class="work-tab-content">
+          <div class="work-header">
+            <h3 class="work-title">DevOps Engineer</h3>
+            <div class="work-company"><i class="fas fa-building"></i> TO THE NEW</div>
+            <div class="work-duration">May 2017 - Jul 2018</div>
+          </div>
+          <div class="work-description">
+            <ul>
+              <li>Designed and implemented CI/CD pipelines for multiple enterprise applications</li>
+              <li>Set up infrastructure monitoring and alerting systems</li>
+              <li>Performed capacity planning and cost analysis for cloud resources</li>
+              <li>Worked on cloud migrations and infrastructure automation</li>
+            </ul>
+          </div>
+          <div class="tech-used">
+            <h4>Technologies Used</h4>
+            <div class="tech-stack">
+              <span>AWS</span>
+              <span>OpenStack</span>
+              <span>Ansible</span>
+              <span>Docker</span>
+              <span>Jenkins</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-container">
+        <div class="skills-masonry">
+          <!-- Programming Languages -->
+          <div class="skill-box">
+            <div class="skill-header">
+              <div class="skill-icon-wrap">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="skill-title">Programming Languages</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-progress-item" data-percentage="95">
+                <div class="skill-name">
+                  <img src="images/python.png" alt="Python" class="skill-icon">
+                  Python
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="90">
+                <div class="skill-name">
+                  <img src="images/bash.png" alt="Shell Scripting" class="skill-icon">
+                  Shell Scripting
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="75">
+                <div class="skill-name">
+                  <img src="images/yaml.png" alt="YAML/JSON" class="skill-icon">
+                  YAML/JSON
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unix & Virtualization -->
+          <div class="skill-box">
+            <div class="skill-header">
+              <div class="skill-icon-wrap">
+                <i class="fas fa-server"></i>
+              </div>
+              <h3 class="skill-title">Unix & Virtualization</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-progress-item" data-percentage="90">
+                <div class="skill-name">
+                  <img src="images/qemu.png" alt="QEMU" class="skill-icon">
+                  QEMU
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/kvm.png" alt="KVM/Libvirt" class="skill-icon">
+                    KVM/Libvirt
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/centos.png" alt="CentOS/Ubuntu" class="skill-icon">
+                  CentOS/Ubuntu
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Cloud Platforms -->
+          <div class="skill-box">
+            <div class="skill-header">
+              <div class="skill-icon-wrap">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h3 class="skill-title">Cloud Platforms</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/aws.png" alt="AWS" class="skill-icon">
+                    AWS
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/gcp.png" alt="GCP" class="skill-icon">
+                    Google Cloud
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/azure.png" alt="Azure" class="skill-icon">
+                    Azure
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/alibaba.png" alt="Alibaba Cloud" class="skill-icon">
+                    Alibaba Cloud
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/openstack.png" alt="OpenStack" class="skill-icon">
+                    OpenStack
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DevOps Tools -->
+          <div class="skill-box">
+            <div class="skill-header">
+              <div class="skill-icon-wrap">
+                <i class="fas fa-wrench"></i>
+              </div>
+              <h3 class="skill-title">DevOps Tools</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/kubernetes.png" alt="Kubernetes" class="skill-icon">
+                    Kubernetes
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/docker.png" alt="Docker" class="skill-icon">
+                    Docker
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/terraform.png" alt="Terraform" class="skill-icon">
+                    Terraform
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/ansible.png" alt="Ansible" class="skill-icon">
+                    Ansible
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/saltstack.png" alt="SaltStack" class="skill-icon">
+                    SaltStack
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/istio.png" alt="Istio" class="skill-icon">
+                    Istio
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/argocd.png" alt="ArgoCD" class="skill-icon">
+                    ArgoCD
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Security -->
+          <div class="skill-box">
+            <div class="skill-header">
+              <div class="skill-icon-wrap">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3 class="skill-title">Security</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/security.png" alt="Security Baseline" class="skill-icon">
+                    Security Baseline
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/iam.png" alt="IAM" class="skill-icon">
+                    Identity & Access Management
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/vuln.png" alt="Vulnerability Management" class="skill-icon">
+                    Vulnerability Management
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Monitoring Tools -->
+          <div class="skill-box">
+            <div class="skill-header">
+              <div class="skill-icon-wrap">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3 class="skill-title">Monitoring</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/prometheus.png" alt="Prometheus" class="skill-icon">
+                    Prometheus
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/grafana.png" alt="Grafana" class="skill-icon">
+                    Grafana
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/elk.png" alt="ELK Stack" class="skill-icon">
+                    ELK Stack
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/zabbix.png" alt="Zabbix" class="skill-icon">
+                    Zabbix
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases & Storage -->
+          <div class="skill-box">
+            <div class="skill-header">
+              <div class="skill-icon-wrap">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3 class="skill-title">Databases & Storage</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/mysql.png" alt="MySQL" class="skill-icon">
+                    MySQL
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/postgresql.png" alt="PostgreSQL" class="skill-icon">
+                    PostgreSQL
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/redis.png" alt="Redis" class="skill-icon">
+                    Redis
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/glusterfs.png" alt="GlusterFS" class="skill-icon">
+                    GlusterFS
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-name">
+                  <img src="images/kafka.png" alt="Kafka" class="skill-icon">
+                    Kafka
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="kubernetes">Kubernetes</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+        <button class="filter-btn" data-filter="monitoring">Monitoring</button>
+        <button class="filter-btn" data-filter="cloud">Cloud</button>
+        <button class="filter-btn" data-filter="automation">Automation</button>
+      </div>
+      <div class="project-grid">
+        <div class="project-card" data-category="kubernetes" data-id="k8s-ha">
+          <div class="project-img">
+            <img src="images/kubernetes.jpg" alt="Kubernetes HA Cluster">
+          </div>
+          <div class="project-info">
+            <h3>Kubernetes HA Cluster</h3>
+            <p>High-availability Kubernetes cluster setup on Data Center with multiple master nodes, custom monitoring, and advanced security.</p>
+            <div class="project-techs">
+              <span>Kubernetes</span>
+              <span>Docker</span>
+              <span>HAProxy</span>
+              <span>etcd</span>
+            </div>
+            <button class="project-details-btn">View Details</button>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="cloud" data-id="iac">
+          <div class="project-img">
+            <img src="images/terraform.jpg" alt="IaC">
+          </div>
+          <div class="project-info">
+            <h3>Infrastructure as Code</h3>
+            <p>Reusable Terraform modules for multi-cloud deployments with automated testing and deployment pipelines.</p>
+            <div class="project-techs">
+              <span>Terraform</span>
+              <span>AWS</span>
+              <span>Azure</span>
+              <span>GCP</span>
+            </div>
+            <button class="project-details-btn">View Details</button>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="monitoring" data-id="monitoring">
+          <div class="project-img">
+            <img src="images/monitoring.jpg" alt="Monitoring Solution">
+          </div>
+          <div class="project-info">
+            <h3>Monitoring Solution</h3>
+            <p>Comprehensive monitoring and alerting system for microservices with custom exporters and intelligent alerts.</p>
+            <div class="project-techs">
+              <span>Prometheus</span>
+              <span>Grafana</span>
+              <span>Alertmanager</span>
+              <span>Kubernetes</span>
+            </div>
+            <button class="project-details-btn">View Details</button>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="ai automation" data-id="cortex">
+          <div class="project-img">
+            <img src="images/cortex-vm.jpg" alt="Cortex VM Analyzer">
+          </div>
+          <div class="project-info">
+            <h3>Cortex VM Analyzer</h3>
+            <p>AI-powered VM metrics analysis application that fetches data from Cortex with interactive visualizations.</p>
+            <div class="project-techs">
+              <span>Python</span>
+              <span>Streamlit</span>
+              <span>Azure OpenAI</span>
+              <span>Docker</span>
+            </div>
+            <button class="project-details-btn">View Details</button>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="ai automation" data-id="ansible">
+          <div class="project-img">
+            <img src="images/ai-assistant.jpg" alt="Ansible Automation">
+          </div>
+          <div class="project-info">
+            <h3>Ansible Automation Assistant</h3>
+            <p>Natural language to Ansible playbook conversion platform with interactive editing and execution features.</p>
+            <div class="project-techs">
+              <span>Python</span>
+              <span>Streamlit</span>
+              <span>OpenAI</span>
+              <span>Ansible</span>
+            </div>
+            <button class="project-details-btn">View Details</button>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="cloud" data-id="cost">
+          <div class="project-img">
+            <img src="images/cost-optimization.jpg" alt="Cost Optimization">
+          </div>
+          <div class="project-info">
+            <h3>Cloud Cost Optimization</h3>
+            <p>Tools and strategies for cloud cost management with automatic resource scheduling and right-sizing.</p>
+            <div class="project-techs">
+              <span>AWS</span>
+              <span>CloudWatch</span>
+              <span>Lambda</span>
+              <span>Python</span>
+            </div>
+            <button class="project-details-btn">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-container">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Email</h3>
+          <p><a href="mailto:gupta.parag@outlook.com">gupta.parag@outlook.com</a></p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <h3>LinkedIn</h3>
+          <p><a href="https://linkedin.com/in/parag-gupta10" target="_blank">linkedin.com/in/parag-gupta10</a></p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <h3>GitHub</h3>
+          <p><a href="https://github.com/paraggupta10" target="_blank">github.com/paraggupta10</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="#home">PG</a>
+          <p>DevOps Engineer & Cloud Architect</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="javascript:void(0)" onclick="openResume()">Resume</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://linkedin.com/in/parag-gupta10" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/paraggupta10" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="mailto:gupta.parag@outlook.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Parag Gupta. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div class="project-modal">
+    <div class="project-modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-header">
+        <h2 class="modal-title"></h2>
+      </div>
+      <div class="modal-body">
+        <!-- Content will be dynamically inserted here -->
+      </div>
+    </div>
+  </div>
+  
+  <!-- Project Details (Hidden from view, used for modal content) -->
+  <div id="project-details" style="display: none;">
+    <!-- Kubernetes HA Cluster -->
+    <div data-project="k8s-ha">
+      <div class="modal-project-img">
+        <img src="images/kubernetes.jpg" alt="Kubernetes HA Cluster">
+      </div>
+      <h3>Kubernetes HA Cluster</h3>
+      <div class="modal-project-description">
+        <p>A highly-available Kubernetes cluster setup with multiple master nodes to ensure zero downtime for critical applications. This project includes:</p>
+        <ul>
+          <li>Redundant control plane with 3+ master nodes using etcd clustering</li>
+          <li>HAProxy load balancing for API server traffic</li>
+          <li>Custom node auto-scaling for handling varying workloads</li>
+          <li>Advanced network policy configuration for pod-to-pod communication</li>
+          <li>Custom monitoring stack with Prometheus, Grafana, and Alertmanager</li>
+          <li>Security hardening with pod security policies and network isolation</li>
+        </ul>
+        <p>The solution provides 99.99% uptime for mission-critical services while optimizing resource usage during peak and off-peak hours.</p>
+      </div>
+      <div class="modal-project-tech">
+        <h4>Technologies Used:</h4>
+        <div class="project-techs">
+          <span>Kubernetes</span>
+          <span>Docker</span>
+          <span>HAProxy</span>
+          <span>etcd</span>
+          <span>Prometheus</span>
+          <span>Grafana</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Infrastructure as Code -->
+    <div data-project="iac">
+      <div class="modal-project-img">
+        <img src="images/terraform.jpg" alt="Infrastructure as Code">
+      </div>
+      <h3>Infrastructure as Code</h3>
+      <div class="modal-project-description">
+        <p>A comprehensive set of Terraform modules for deploying and managing infrastructure across multiple cloud providers. Key features include:</p>
+        <ul>
+          <li>Reusable modules for AWS, Azure, and GCP resources</li>
+          <li>Consistent naming, tagging, and security policies across all deployments</li>
+          <li>Automated testing of infrastructure using Terratest</li>
+          <li>CI/CD pipeline integration for infrastructure deployments</li>
+          <li>State management and locking with remote backends</li>
+          <li>Drift detection and automated remediation</li>
+        </ul>
+        <p>This approach reduced infrastructure deployment time by 70% and improved compliance with security policies across all environments.</p>
+      </div>
+      <div class="modal-project-tech">
+        <h4>Technologies Used:</h4>
+        <div class="project-techs">
+          <span>Terraform</span>
+          <span>AWS</span>
+          <span>Azure</span>
+          <span>GCP</span>
+          <span>Jenkins</span>
+          <span>GitLab CI</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Monitoring Solution -->
+    <div data-project="monitoring">
+      <div class="modal-project-img">
+        <img src="images/monitoring.jpg" alt="Monitoring Solution">
+      </div>
+      <h3>Monitoring Solution</h3>
+      <div class="modal-project-description">
+        <p>A comprehensive monitoring and observability solution for microservices architecture. The platform provides:</p>
+        <ul>
+          <li>End-to-end visibility across the entire application stack</li>
+          <li>Custom exporters for application-specific metrics</li>
+          <li>Intelligent alerting with PagerDuty integration and alert routing</li>
+          <li>Automated dashboard generation for new services</li>
+          <li>Historical data analysis for capacity planning</li>
+          <li>Service level objective (SLO) monitoring and reporting</li>
+        </ul>
+        <p>This solution reduced mean time to detect (MTTD) by 60% and mean time to resolve (MTTR) by 45% for production incidents.</p>
+      </div>
+      <div class="modal-project-tech">
+        <h4>Technologies Used:</h4>
+        <div class="project-techs">
+          <span>Prometheus</span>
+          <span>Grafana</span>
+          <span>Alertmanager</span>
+          <span>Kubernetes</span>
+          <span>Node Exporter</span>
+          <span>Loki</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Cortex VM Analyzer -->
+    <div data-project="cortex">
+      <div class="modal-project-img">
+        <img src="images/cortex-vm.jpg" alt="Cortex VM Analyzer">
+      </div>
+      <h3>Cortex VM Analyzer</h3>
+      <div class="modal-project-description">
+        <p>An AI-powered application for analyzing virtual machine metrics and providing actionable insights. Features include:</p>
+        <ul>
+          <li>Automated data collection from Cortex metrics database</li>
+          <li>Machine learning models for anomaly detection in VM performance</li>
+          <li>Interactive visualizations of resource usage patterns</li>
+          <li>Natural language processing for querying metrics data</li>
+          <li>Prediction of resource needs based on historical patterns</li>
+          <li>Recommendation engine for VM right-sizing</li>
+        </ul>
+        <p>This tool identified optimization opportunities that resulted in a 30% reduction in cloud infrastructure costs.</p>
+      </div>
+      <div class="modal-project-tech">
+        <h4>Technologies Used:</h4>
+        <div class="project-techs">
+          <span>Python</span>
+          <span>Streamlit</span>
+          <span>Azure OpenAI</span>
+          <span>Docker</span>
+          <span>Pandas</span>
+          <span>Plotly</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Ansible Automation Assistant -->
+    <div data-project="ansible">
+      <div class="modal-project-img">
+        <img src="images/ai-assistant.jpg" alt="Ansible Automation Assistant">
+      </div>
+      <h3>Ansible Automation Assistant</h3>
+      <div class="modal-project-description">
+        <p>A platform that converts natural language instructions into executable Ansible playbooks. Key capabilities include:</p>
+        <ul>
+          <li>Natural language processing to understand automation requirements</li>
+          <li>Automatic generation of Ansible playbooks from text descriptions</li>
+          <li>Interactive editing and validation of generated playbooks</li>
+          <li>Integration with existing Ansible inventory and variables</li>
+          <li>Execution tracking and reporting</li>
+          <li>Knowledge base of common automation patterns</li>
+        </ul>
+        <p>This tool enabled non-technical teams to implement infrastructure automation, reducing the time to automate common tasks by 80%.</p>
+      </div>
+      <div class="modal-project-tech">
+        <h4>Technologies Used:</h4>
+        <div class="project-techs">
+          <span>Python</span>
+          <span>Streamlit</span>
+          <span>OpenAI</span>
+          <span>Ansible</span>
+          <span>Flask</span>
+          <span>YAML</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Cloud Cost Optimization -->
+    <div data-project="cost">
+      <div class="modal-project-img">
+        <img src="images/cost-optimization.jpg" alt="Cloud Cost Optimization">
+      </div>
+      <h3>Cloud Cost Optimization</h3>
+      <div class="modal-project-description">
+        <p>A comprehensive solution for managing and optimizing cloud infrastructure costs. Key components include:</p>
+        <ul>
+          <li>Automated resource scheduling for non-production environments</li>
+          <li>Right-sizing recommendations based on utilization patterns</li>
+          <li>Reserved instance and savings plan analysis</li>
+          <li>Multi-account and multi-cloud cost visualization</li>
+          <li>Budget alerting and forecasting</li>
+          <li>Tagging compliance enforcement</li>
+        </ul>
+        <p>This initiative reduced cloud spending by approximately $120,000 annually while maintaining or improving application performance.</p>
+      </div>
+      <div class="modal-project-tech">
+        <h4>Technologies Used:</h4>
+        <div class="project-techs">
+          <span>AWS</span>
+          <span>CloudWatch</span>
+          <span>Lambda</span>
+          <span>Python</span>
+          <span>Cost Explorer API</span>
+          <span>DynamoDB</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/resume-handler.js"></script>
+  <script src="js/photo-slideshow.js"></script>
+</body>
+</html> 
