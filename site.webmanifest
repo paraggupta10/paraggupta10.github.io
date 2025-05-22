@@ -1,0 +1,14 @@
+{
+  "name": "Parag Gupta - DevOps Engineer",
+  "short_name": "Parag Gupta",
+  "icons": [
+    {
+      "src": "images/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#00897b",
+  "background_color": "#ffffff",
+  "display": "standalone"
+} 
