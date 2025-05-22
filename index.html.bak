@@ -27,7 +27,6 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="javascript:void(0)" class="resume-link" onclick="openResume()">Resume</a></li>
         </ul>
       </nav>
       <div class="menu-btn">
@@ -38,10 +37,8 @@
     </div>
     
     <div id="home" class="hero-content">
-      <div class="profile-slideshow">
-        <div class="slide active" style="background-image: url('my_photos/pic1.jpeg')"></div>
-        <div class="slide" style="background-image: url('my_photos/pic2_fixed.jpeg')"></div>
-        <div class="slide" style="background-image: url('my_photos/pic3.jpeg')"></div>
+      <div class="hero-image">
+        <img src="images/profile.jpg" alt="Parag Gupta">
       </div>
       <div class="hero-text">
         <p class="subtitle">Hello, I'm</p>
@@ -51,7 +48,6 @@
         <div class="hero-buttons">
           <a href="#contact" class="btn primary">Contact Me</a>
           <a href="#projects" class="btn secondary">View Projects</a>
-          <a href="javascript:void(0)" onclick="openResume()" class="btn secondary resume-btn">Resume</a>
         </div>
         <div class="social-icons">
           <a href="https://linkedin.com/in/parag-gupta10" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -267,8 +263,6 @@
               <li>Migrated services from on-premise to cloud for cost optimization</li>
               <li>Implemented high-availability clusters for critical payment services</li>
               <li>Automated deployment workflows for faster release cycles</li>
-              <li>Built and managed an OpenStack cluster with over 4,000 cores for the payments team's QA environment, alongside a 50TB Elasticsearch cluster for managing large-scale user data, ensuring high availability and performance</li>
-              <li>Automated infrastructure provisioning and workloads using Salt and Ansible, significantly improving operational efficiency</li>
             </ul>
           </div>
           <div class="tech-used">
@@ -360,20 +354,32 @@
             <div class="skill-items">
               <div class="skill-progress-item" data-percentage="90">
                 <div class="skill-name">
-                  <img src="images/qemu.png" alt="QEMU" class="skill-icon">
-                  QEMU
-                </div>
-              </div>
-              <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/kvm.png" alt="KVM/Libvirt" class="skill-icon">
-                    KVM/Libvirt
-                </div>
-              </div>
-              <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
                   <img src="images/centos.png" alt="CentOS/Ubuntu" class="skill-icon">
                   CentOS/Ubuntu
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="85">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/kvm.png" alt="KVM/Libvirt" class="skill-icon">
+                    KVM/Libvirt
+                  </div>
+                  <div class="skill-percentage">85%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
+                </div>
+              </div>
+              <div class="skill-progress-item" data-percentage="80">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/qemu.png" alt="QEMU" class="skill-icon">
+                    QEMU
+                  </div>
+                  <div class="skill-percentage">80%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
             </div>
@@ -388,34 +394,64 @@
               <h3 class="skill-title">Cloud Platforms</h3>
             </div>
             <div class="skill-items">
-              <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/aws.png" alt="AWS" class="skill-icon">
+              <div class="skill-progress-item" data-percentage="95">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/aws.png" alt="AWS" class="skill-icon">
                     AWS
+                  </div>
+                  <div class="skill-percentage">95%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/gcp.png" alt="GCP" class="skill-icon">
+              <div class="skill-progress-item" data-percentage="90">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/gcp.png" alt="GCP" class="skill-icon">
                     Google Cloud
+                  </div>
+                  <div class="skill-percentage">90%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
               <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/azure.png" alt="Azure" class="skill-icon">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/azure.png" alt="Azure" class="skill-icon">
                     Azure
+                  </div>
+                  <div class="skill-percentage">85%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/alibaba.png" alt="Alibaba Cloud" class="skill-icon">
+              <div class="skill-progress-item" data-percentage="80">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/alibaba.png" alt="Alibaba Cloud" class="skill-icon">
                     Alibaba Cloud
+                  </div>
+                  <div class="skill-percentage">80%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
               <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/openstack.png" alt="OpenStack" class="skill-icon">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/openstack.png" alt="OpenStack" class="skill-icon">
                     OpenStack
+                  </div>
+                  <div class="skill-percentage">85%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
             </div>
@@ -430,46 +466,88 @@
               <h3 class="skill-title">DevOps Tools</h3>
             </div>
             <div class="skill-items">
-              <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/kubernetes.png" alt="Kubernetes" class="skill-icon">
+              <div class="skill-progress-item" data-percentage="95">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/kubernetes.png" alt="Kubernetes" class="skill-icon">
                     Kubernetes
+                  </div>
+                  <div class="skill-percentage">95%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/docker.png" alt="Docker" class="skill-icon">
+              <div class="skill-progress-item" data-percentage="90">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/docker.png" alt="Docker" class="skill-icon">
                     Docker
+                  </div>
+                  <div class="skill-percentage">90%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/terraform.png" alt="Terraform" class="skill-icon">
+              <div class="skill-progress-item" data-percentage="90">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/terraform.png" alt="Terraform" class="skill-icon">
                     Terraform
+                  </div>
+                  <div class="skill-percentage">90%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
               <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/ansible.png" alt="Ansible" class="skill-icon">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/ansible.png" alt="Ansible" class="skill-icon">
                     Ansible
+                  </div>
+                  <div class="skill-percentage">85%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/saltstack.png" alt="SaltStack" class="skill-icon">
+              <div class="skill-progress-item" data-percentage="80">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/saltstack.png" alt="SaltStack" class="skill-icon">
                     SaltStack
+                  </div>
+                  <div class="skill-percentage">80%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
               <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/istio.png" alt="Istio" class="skill-icon">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/istio.png" alt="Istio" class="skill-icon">
                     Istio
+                  </div>
+                  <div class="skill-percentage">85%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
               <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/argocd.png" alt="ArgoCD" class="skill-icon">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/argocd.png" alt="ArgoCD" class="skill-icon">
                     ArgoCD
+                  </div>
+                  <div class="skill-percentage">85%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
             </div>
@@ -485,21 +563,39 @@
             </div>
             <div class="skill-items">
               <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/security.png" alt="Security Baseline" class="skill-icon">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/security.png" alt="Security Baseline" class="skill-icon">
                     Security Baseline
+                  </div>
+                  <div class="skill-percentage">85%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/iam.png" alt="IAM" class="skill-icon">
+              <div class="skill-progress-item" data-percentage="80">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/iam.png" alt="IAM" class="skill-icon">
                     Identity & Access Management
+                  </div>
+                  <div class="skill-percentage">80%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/vuln.png" alt="Vulnerability Management" class="skill-icon">
+              <div class="skill-progress-item" data-percentage="75">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/vuln.png" alt="Vulnerability Management" class="skill-icon">
                     Vulnerability Management
+                  </div>
+                  <div class="skill-percentage">75%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
             </div>
@@ -514,28 +610,52 @@
               <h3 class="skill-title">Monitoring</h3>
             </div>
             <div class="skill-items">
-              <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/prometheus.png" alt="Prometheus" class="skill-icon">
+              <div class="skill-progress-item" data-percentage="90">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/prometheus.png" alt="Prometheus" class="skill-icon">
                     Prometheus
+                  </div>
+                  <div class="skill-percentage">90%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/grafana.png" alt="Grafana" class="skill-icon">
+              <div class="skill-progress-item" data-percentage="90">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/grafana.png" alt="Grafana" class="skill-icon">
                     Grafana
+                  </div>
+                  <div class="skill-percentage">90%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
               <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/elk.png" alt="ELK Stack" class="skill-icon">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/elk.png" alt="ELK Stack" class="skill-icon">
                     ELK Stack
+                  </div>
+                  <div class="skill-percentage">85%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/zabbix.png" alt="Zabbix" class="skill-icon">
+              <div class="skill-progress-item" data-percentage="80">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/zabbix.png" alt="Zabbix" class="skill-icon">
                     Zabbix
+                  </div>
+                  <div class="skill-percentage">80%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
             </div>
@@ -551,33 +671,63 @@
             </div>
             <div class="skill-items">
               <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/mysql.png" alt="MySQL" class="skill-icon">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/mysql.png" alt="MySQL" class="skill-icon">
                     MySQL
+                  </div>
+                  <div class="skill-percentage">85%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/postgresql.png" alt="PostgreSQL" class="skill-icon">
+              <div class="skill-progress-item" data-percentage="80">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/postgresql.png" alt="PostgreSQL" class="skill-icon">
                     PostgreSQL
+                  </div>
+                  <div class="skill-percentage">80%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/redis.png" alt="Redis" class="skill-icon">
+              <div class="skill-progress-item" data-percentage="75">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/redis.png" alt="Redis" class="skill-icon">
                     Redis
+                  </div>
+                  <div class="skill-percentage">75%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/glusterfs.png" alt="GlusterFS" class="skill-icon">
+              <div class="skill-progress-item" data-percentage="70">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/glusterfs.png" alt="GlusterFS" class="skill-icon">
                     GlusterFS
+                  </div>
+                  <div class="skill-percentage">70%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
-              <div class="skill-progress-item" data-percentage="85">
-                <div class="skill-name">
-                  <img src="images/kafka.png" alt="Kafka" class="skill-icon">
+              <div class="skill-progress-item" data-percentage="80">
+                <div class="skill-progress-details">
+                  <div class="skill-name">
+                    <img src="images/kafka.png" alt="Kafka" class="skill-icon">
                     Kafka
+                  </div>
+                  <div class="skill-percentage">80%</div>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 0%"></div>
                 </div>
               </div>
             </div>
@@ -670,7 +820,7 @@
         
         <div class="project-card" data-category="ai automation" data-id="ansible">
           <div class="project-img">
-            <img src="images/ai-assistant.jpg" alt="Ansible Automation">
+            <img src="images/ansible.jpg" alt="Ansible Automation">
           </div>
           <div class="project-info">
             <h3>Ansible Automation Assistant</h3>
@@ -749,7 +899,6 @@
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
-          <a href="javascript:void(0)" onclick="openResume()">Resume</a>
         </div>
         <div class="footer-social">
           <a href="https://linkedin.com/in/parag-gupta10" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -905,7 +1054,7 @@
     <!-- Ansible Automation Assistant -->
     <div data-project="ansible">
       <div class="modal-project-img">
-        <img src="images/ai-assistant.jpg" alt="Ansible Automation Assistant">
+        <img src="images/ansible.jpg" alt="Ansible Automation Assistant">
       </div>
       <h3>Ansible Automation Assistant</h3>
       <div class="modal-project-description">
@@ -966,7 +1115,5 @@
   </div>
 
   <script src="js/script.js"></script>
-  <script src="js/resume-handler.js"></script>
-  <script src="js/photo-slideshow.js"></script>
 </body>
 </html> 
