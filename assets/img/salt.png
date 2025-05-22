@@ -1,1 +1,41 @@
-<svg width="2500" height="2275" viewBox="0 0 256 233" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><path d="M138.927 70.876V30.908L197.29 60.43l.004 57.783-23.212-11.2v-18.16l-35.154-17.977" fill="#4396B9"/><path d="M216.112 108.806l15.124 7.733-57.012 28.51-.143-38.036 23.212 11.2 18.82-9.407" fill="#B8DDE8"/><path d="M138.927 46.887l-23.792 11.82 23.792 12.17v-23.99" fill="#75BED5"/><path d="M116.284 174.323l-.487-57.574-57.894-28.817L0 59.338v58.41l.019.01.559 56.57 55.987 27.995 1.68.839.117.056 57.932 28.895v-57.785l-.01-.005" fill="#4396B9"/><path d="M231.236 116.54l-57.155 28.583v-56.27l-58.284 27.896.497 58.787v56.577l57.787-28.895v-.317l57.155-28.573v-57.789" fill="#75BED5"/><path d="M255.083 89.323l-57.79 28.89V60.43l57.79-28.897v57.79" fill="#75BED5"/><path d="M138.927 30.908L197.29 60.43l57.794-28.897-58.945-30.15-39.823 20.551L113.454.01l-58.11 30.255L0 59.338l57.903 28.594 57.894 28.817 58.284-27.895-58.946-30.146-.76.392-.147-.074.907-.318 23.792-11.82v-15.98" fill="#B8DDE8"/></svg>
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Wikimedia Error</title>
+<style>
+* { margin: 0; padding: 0; }
+body { background: #fff; font: 15px/1.6 sans-serif; color: #333; }
+.content { margin: 7% auto 0; padding: 2em 1em 1em; max-width: 640px; }
+.footer { clear: both; margin-top: 14%; border-top: 1px solid #e5e5e5; background: #f9f9f9; padding: 2em 0; font-size: 0.8em; text-align: center; }
+img { float: left; margin: 0 2em 2em 0; }
+a img { border: 0; }
+h1 { margin-top: 1em; font-size: 1.2em; }
+.content-text { overflow: hidden; overflow-wrap: break-word; word-wrap: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
+p { margin: 0.7em 0 1em 0; }
+a { color: #0645ad; text-decoration: none; }
+a:hover { text-decoration: underline; }
+code { font-family: sans-serif; }
+summary { font-weight: bold; cursor: pointer; }
+details[open] { background: #970302; color: #dfdedd; }
+.text-muted { color: #777; }
+@media (prefers-color-scheme: dark) {
+  a { color: #9e9eff; }
+  body { background: transparent; color: #ddd; }
+  .footer { border-top: 1px solid #444; background: #060606; }
+  #logo { filter: invert(1) hue-rotate(180deg); }
+  .text-muted { color: #888; }
+}
+</style>
+<meta name="color-scheme" content="light dark">
+<div class="content" role="main">
+<a href="https://www.wikimedia.org"><img id="logo" src="https://www.wikimedia.org/static/images/wmf-logo.png" srcset="https://www.wikimedia.org/static/images/wmf-logo-2x.png 2x" alt="Wikimedia" width="135" height="101">
+</a>
+<h1>Error</h1>
+<div class="content-text">
+
+<p>Our servers are currently under maintenance or experiencing a technical issue</p>
+</div>
+</div>
+<div class="footer"><p>If you report this error to the Wikimedia System Administrators, please include the details below.</p><p class="text-muted"><code>Request served via cp5029 cp5029, Varnish XID 742225113<br>Upstream caches: cp5029 int<br>Error: 404, Not Found at Thu, 22 May 2025 13:18:03 GMT<br><details><summary>Sensitive client information</summary>IP address: 2405:201:4022:c086:a084:3870:edb2:9abf</details></code></p>
+</div>
+</html>
