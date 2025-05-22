@@ -10,13 +10,6 @@
 [![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/parag-gupta10/)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-### Website Preview
-<p align="center"> 
-  <kbd>
-    <a href="https://paraggupta10.github.io" target="_blank"><img src="examples/homepage-screenshot.jpg">
-  </a>
-  </kbd>
-</p>
 
 ## Features 📋
 ⚡️ Fully Responsive Design\
