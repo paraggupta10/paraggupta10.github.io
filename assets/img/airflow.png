@@ -1,0 +1,14 @@
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<h1>404 Not Found</h1>
+<ul>
+<li>Code: NoSuchKey</li>
+<li>Message: The specified key does not exist.</li>
+<li>Key: docs/apache-airflow/stable/_images/pin_large.png</li>
+<li>RequestId: A325WX84J8QZPBKY</li>
+<li>HostId: VG25v69Ui/fIWrZhfAL+F53iNs1A4rPMCNx11lgTPy0cGkadJ8deflnDxpedLt8e06Xzyw1I9Gk=</li>
+</ul>
+<hr/>
+</body>
+</html>
