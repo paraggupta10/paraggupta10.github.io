@@ -602,6 +602,23 @@
         <button class="filter-btn" data-filter="automation">Automation</button>
       </div>
       <div class="project-grid">
+        <div class="project-card" data-category="ai" data-id="aiops-patent">
+          <div class="project-img">
+            <img src="images/ai-assistant.jpg" alt="AIOps Patent">
+          </div>
+          <div class="project-info">
+            <h3>AIOps Root Cause Analysis (Patent Pending)</h3>
+            <p>AI-powered system that fuses metrics, logs, and traces into unified structures for intelligent root cause analysis with continuous learning capabilities.</p>
+            <div class="project-techs">
+              <span>AI/ML</span>
+              <span>Graph Neural Networks</span>
+              <span>Bayesian Networks</span>
+              <span>Patent</span>
+            </div>
+            <button class="project-details-btn">View Details</button>
+          </div>
+        </div>
+        
         <div class="project-card" data-category="kubernetes" data-id="k8s-ha">
           <div class="project-img">
             <img src="images/kubernetes.jpg" alt="Kubernetes HA Cluster">
@@ -780,6 +797,32 @@
   
   <!-- Project Details (Hidden from view, used for modal content) -->
   <div id="project-details" style="display: none;">
+    <!-- AIOps Root Cause Analysis Patent -->
+    <div data-project="aiops-patent">
+      <div class="modal-project-img">
+        <img src="images/ai-assistant.jpg" alt="AIOps Root Cause Analysis Patent">
+      </div>
+      <h3>AIOps Root Cause Analysis (Patent Pending)</h3>
+      <div class="modal-project-description">
+        <p><strong>The Problem:</strong> Modern systems generate tons of telemetry data — metrics (CPU, memory), logs (errors, events), and traces (request flows). Traditional tools look at these separately, which leads to noisy, siloed alerts and "alert fatigue," making it hard to spot the real issue.</p>
+        
+        <p><strong>The Solution:</strong> This patent introduces an AI-powered system that fuses all these signals into a unified structure, builds a cause-and-effect graph of events, and then works backward to pinpoint the true root cause of an incident (instead of just the noisy symptoms). What makes it stand out is a learning loop -- every time an SRE validates the system's prediction, it learns and adapts, becoming smarter with each incident.</p>
+        
+        <p><strong>The Innovation:</strong> In essence, this creates an AI Ops brain that doesn't just correlate data, but truly understands causation, and improves continuously like a human expert.</p>
+      </div>
+      <div class="modal-project-tech">
+        <h4>Technologies Used:</h4>
+        <div class="project-techs">
+          <span>AI/ML</span>
+          <span>Graph Neural Networks</span>
+          <span>Bayesian Networks</span>
+          <span>LSTM</span>
+          <span>Transformers</span>
+          <span>Reinforcement Learning</span>
+        </div>
+      </div>
+    </div>
+    
     <!-- Kubernetes HA Cluster -->
     <div data-project="k8s-ha">
       <div class="modal-project-img">
