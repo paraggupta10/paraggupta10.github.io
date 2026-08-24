@@ -711,18 +711,18 @@
           </div>
         </div>
         
-        <div class="project-card" data-category="monitoring" data-id="monitoring">
+        <div class="project-card" data-category="monitoring kubernetes" data-id="monitoring">
           <div class="project-img">
-            <img src="images/monitoring.jpg" alt="Monitoring Solution">
+            <img src="images/monitoring.jpg" alt="Distributed Tracing Platform Rollout">
           </div>
           <div class="project-info">
-            <h3>Monitoring Solution</h3>
-            <p>Comprehensive monitoring and alerting system for microservices with custom exporters and intelligent alerts.</p>
+            <h3>Distributed Tracing Platform Rollout</h3>
+            <p>Built the reference implementation and onboarding runbook for zero-code distributed tracing across a Java microservices platform, adopted org-wide as the standard integration pattern.</p>
             <div class="project-techs">
-              <span>Prometheus</span>
-              <span>Grafana</span>
-              <span>Alertmanager</span>
+              <span>OpenTelemetry</span>
               <span>Kubernetes</span>
+              <span>Grafana Tempo</span>
+              <span>GitOps</span>
             </div>
             <button class="project-details-btn">View Details</button>
           </div>
@@ -949,33 +949,32 @@
       </div>
     </div>
     
-    <!-- Monitoring Solution -->
+    <!-- Distributed Tracing Platform Rollout -->
     <div data-project="monitoring">
       <div class="modal-project-img">
-        <img src="images/monitoring.jpg" alt="Monitoring Solution">
+        <img src="images/monitoring.jpg" alt="Distributed Tracing Platform Rollout">
       </div>
-      <h3>Monitoring Solution</h3>
+      <h3>Distributed Tracing Platform Rollout</h3>
       <div class="modal-project-description">
-        <p>A comprehensive monitoring and observability solution for microservices architecture. The platform provides:</p>
+        <p>Designed and rolled out a distributed tracing pattern for a Java microservices platform running on Kubernetes, then wrote the org-wide onboarding runbook that became the standard other teams follow to adopt it. The core requirement: add tracing without disturbing the existing logging and metrics pipelines already in production. Key aspects:</p>
         <ul>
-          <li>End-to-end visibility across the entire application stack</li>
-          <li>Custom exporters for application-specific metrics</li>
-          <li>Intelligent alerting with PagerDuty integration and alert routing</li>
-          <li>Automated dashboard generation for new services</li>
-          <li>Historical data analysis for capacity planning</li>
-          <li>Service level objective (SLO) monitoring and reporting</li>
+          <li>Zero-code instrumentation - an OpenTelemetry Java agent is auto-injected via a Kubernetes <code>Instrumentation</code> CRD, no application code changes required</li>
+          <li>Fan-in collector architecture: per-node DaemonSet collectors forward to a central, autoscaled gateway collector before reaching the tracing backend</li>
+          <li>Deliberate coexistence strategy - traces run through OpenTelemetry/Tempo while the existing log and metrics pipelines are left untouched, minimizing rollout risk</li>
+          <li>Production-hardened through real incidents: fixed a Prometheus metrics-parsing incompatibility, corrected scrape-path and trace-routing misconfigurations, and resolved cross-cloud secret-management issues during rollout</li>
+          <li>Validated in both staging and production before being documented as the reference pattern for other teams</li>
         </ul>
-        <p>This solution reduced mean time to detect (MTTD) by 60% and mean time to resolve (MTTR) by 45% for production incidents.</p>
+        <p>The resulting implementation and runbook are now the standard onboarding path other teams use to adopt distributed tracing on the platform.</p>
       </div>
       <div class="modal-project-tech">
         <h4>Technologies Used:</h4>
         <div class="project-techs">
-          <span>Prometheus</span>
-          <span>Grafana</span>
-          <span>Alertmanager</span>
+          <span>OpenTelemetry</span>
           <span>Kubernetes</span>
-          <span>Node Exporter</span>
-          <span>Loki</span>
+          <span>Grafana Tempo</span>
+          <span>Prometheus</span>
+          <span>GitOps</span>
+          <span>Java</span>
         </div>
       </div>
     </div>
