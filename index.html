@@ -135,7 +135,7 @@
             <i class="fas fa-book"></i>
           </div>
           <h3>Publications</h3>
-          <p>Authored technical blogs on Kubernetes, Django, and AWS CodeDeploy, providing insights on infrastructure automation and high availability setups.</p>
+          <p>Authored technical blogs on <a href="https://www.tothenew.com/blog/how-to-setup-kubernetes-master-ha-on-centos/" target="_blank" rel="noopener">Kubernetes</a>, <a href="https://www.tothenew.com/blog/django-application-deployment/" target="_blank" rel="noopener">Django</a>, and <a href="https://www.tothenew.com/blog/integration-of-aws-codedeploy-with-jenkins/" target="_blank" rel="noopener">AWS CodeDeploy</a>, providing insights on infrastructure automation and high availability setups.</p>
         </div>
         
         <div class="achievement-card">
@@ -679,12 +679,16 @@
           </div>
           <div class="project-info">
             <h3>Kubernetes HA Cluster</h3>
-            <p>High-availability Kubernetes cluster setup on Data Center with multiple master nodes, custom monitoring, and advanced security.</p>
+            <p>3-master-node highly-available Kubernetes cluster on CentOS: etcd clustering, Flannel overlay networking, and leader-election for the control plane. Documented in a published blog post.</p>
             <div class="project-techs">
               <span>Kubernetes</span>
+              <span>CentOS</span>
               <span>Docker</span>
-              <span>HAProxy</span>
               <span>etcd</span>
+              <span>Flannel</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.tothenew.com/blog/how-to-setup-kubernetes-master-ha-on-centos/" target="_blank" rel="noopener"><i class="fas fa-blog"></i> Read the Blog Post</a>
             </div>
             <button class="project-details-btn">View Details</button>
           </div>
@@ -894,27 +898,27 @@
       </div>
       <h3>Kubernetes HA Cluster</h3>
       <div class="modal-project-description">
-        <p>A highly-available Kubernetes cluster setup with multiple master nodes to ensure zero downtime for critical applications. This project includes:</p>
+        <p>A highly-available Kubernetes cluster on CentOS with a redundant 3-master control plane, built and documented as a published technical blog post. Key aspects:</p>
         <ul>
-          <li>Redundant control plane with 3+ master nodes using etcd clustering</li>
-          <li>HAProxy load balancing for API server traffic</li>
-          <li>Custom node auto-scaling for handling varying workloads</li>
-          <li>Advanced network policy configuration for pod-to-pod communication</li>
-          <li>Custom monitoring stack with Prometheus, Grafana, and Alertmanager</li>
-          <li>Security hardening with pod security policies and network isolation</li>
+          <li>3-master control plane with etcd clustering for distributed consensus (client port 2379, peer port 2380)</li>
+          <li>Internal load balancer routing both API-server and etcd traffic across all three masters</li>
+          <li>Leader election (<code>--leader-elect</code>) on the Controller Manager and Scheduler so exactly one master actively manages the cluster at a time</li>
+          <li>Flannel overlay networking for pod-to-pod communication across nodes</li>
+          <li>Docker as the container runtime, installed via the <code>virt7-docker-common-release</code> yum repository</li>
         </ul>
-        <p>The solution provides 99.99% uptime for mission-critical services while optimizing resource usage during peak and off-peak hours.</p>
       </div>
       <div class="modal-project-tech">
         <h4>Technologies Used:</h4>
         <div class="project-techs">
           <span>Kubernetes</span>
+          <span>CentOS</span>
           <span>Docker</span>
-          <span>HAProxy</span>
           <span>etcd</span>
-          <span>Prometheus</span>
-          <span>Grafana</span>
+          <span>Flannel</span>
         </div>
+      </div>
+      <div class="project-links">
+        <a href="https://www.tothenew.com/blog/how-to-setup-kubernetes-master-ha-on-centos/" target="_blank" rel="noopener"><i class="fas fa-blog"></i> Read the Blog Post</a>
       </div>
     </div>
     
