@@ -690,18 +690,22 @@
           </div>
         </div>
         
-        <div class="project-card" data-category="cloud" data-id="iac">
+        <div class="project-card" data-category="cloud automation" data-id="iac">
           <div class="project-img">
             <img src="images/terraform.jpg" alt="IaC">
           </div>
           <div class="project-info">
             <h3>Infrastructure as Code</h3>
-            <p>Reusable Terraform modules for multi-cloud deployments with automated testing and deployment pipelines.</p>
+            <p>Published, public Terraform module that declaratively manages MongoDB collection indexes from a YAML file - filling a real gap left by the official Atlas provider - with unit tests, a live-database integration test, and CI on every push.</p>
             <div class="project-techs">
               <span>Terraform</span>
-              <span>AWS</span>
-              <span>Azure</span>
-              <span>GCP</span>
+              <span>Python</span>
+              <span>MongoDB</span>
+              <span>GitHub Actions</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/paraggupta10/terraform-mongodbatlas-indexes" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Code</a>
+              <a href="https://registry.terraform.io/modules/paraggupta10/indexes/mongodbatlas/latest" target="_blank" rel="noopener"><i class="fas fa-cube"></i> View on Registry</a>
             </div>
             <button class="project-details-btn">View Details</button>
           </div>
@@ -918,27 +922,30 @@
       </div>
       <h3>Infrastructure as Code</h3>
       <div class="modal-project-description">
-        <p>A comprehensive set of Terraform modules for deploying and managing infrastructure across multiple cloud providers. Key features include:</p>
+        <p>A published, public Terraform module (registry.terraform.io) that declaratively manages MongoDB collection indexes and collections from a single YAML file. The official mongodbatlas provider only covers Atlas Search indexes, not regular collection indexes, and existing community alternatives are small and fragmented - this fills that gap with a properly tested, documented module instead of another one-off script. Key features include:</p>
         <ul>
-          <li>Reusable modules for AWS, Azure, and GCP resources</li>
-          <li>Consistent naming, tagging, and security policies across all deployments</li>
-          <li>Automated testing of infrastructure using Terratest</li>
-          <li>CI/CD pipeline integration for infrastructure deployments</li>
-          <li>State management and locking with remote backends</li>
-          <li>Drift detection and automated remediation</li>
+          <li>Plan-time diff of live index/collection state vs. declared YAML config, applied on <code>terraform apply</code></li>
+          <li>In-place TTL updates via <code>collMod</code> instead of a full drop-and-recreate, avoiding unnecessary index rebuilds</li>
+          <li>Fully unit-tested diff/apply logic (pytest) plus a native <code>terraform test</code> suite that runs end-to-end against a real MongoDB instance</li>
+          <li>GitHub Actions CI: lint, unit tests, a live MongoDB integration test, and terraform-docs drift checking on every push</li>
+          <li>Self-contained - no external script or repo-layout dependencies, install and use standalone</li>
         </ul>
-        <p>This approach reduced infrastructure deployment time by 70% and improved compliance with security policies across all environments.</p>
+        <p>Published to the public Terraform Registry under an MIT license.</p>
       </div>
       <div class="modal-project-tech">
         <h4>Technologies Used:</h4>
         <div class="project-techs">
           <span>Terraform</span>
-          <span>AWS</span>
-          <span>Azure</span>
-          <span>GCP</span>
-          <span>Jenkins</span>
-          <span>GitLab CI</span>
+          <span>Python</span>
+          <span>MongoDB</span>
+          <span>pymongo</span>
+          <span>GitHub Actions</span>
+          <span>pytest</span>
         </div>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/paraggupta10/terraform-mongodbatlas-indexes" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Code on GitHub</a>
+        <a href="https://registry.terraform.io/modules/paraggupta10/indexes/mongodbatlas/latest" target="_blank" rel="noopener"><i class="fas fa-cube"></i> View on Terraform Registry</a>
       </div>
     </div>
     
