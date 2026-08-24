@@ -730,17 +730,20 @@
           </div>
           <div class="project-info">
             <h3>Cortex VM Analyzer</h3>
-            <p>AI-powered VM metrics analysis application that fetches data from Cortex with interactive visualizations.</p>
+            <p>AI-augmented observability demo: synthetic VM metrics, rule-based anomaly detection, and an LLM-generated diagnostic narrative with an offline fallback, in an interactive Streamlit dashboard.</p>
             <div class="project-techs">
               <span>Python</span>
               <span>Streamlit</span>
-              <span>Azure OpenAI</span>
+              <span>OpenAI API</span>
               <span>Docker</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/paraggupta10/cortex-vm-analyzer" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Code</a>
             </div>
             <button class="project-details-btn">View Details</button>
           </div>
         </div>
-        
+
         <div class="project-card" data-category="ai automation" data-id="ansible">
           <div class="project-img">
             <img src="images/ansible_automation.svg" alt="Ansible Automation">
@@ -977,27 +980,29 @@
       </div>
       <h3>Cortex VM Analyzer</h3>
       <div class="modal-project-description">
-        <p>An AI-powered application for analyzing virtual machine metrics and providing actionable insights. Features include:</p>
+        <p>A self-contained demo of an AI-augmented observability pattern: synthetic virtual-machine metrics (CPU, memory, disk, network) are generated in-process, run through a rule-based anomaly detector, and then narrated by an LLM -- with a fully offline, deterministic fallback when no AI key is configured. Features include:</p>
         <ul>
-          <li>Automated data collection from Cortex metrics database</li>
-          <li>Machine learning models for anomaly detection in VM performance</li>
-          <li>Interactive visualizations of resource usage patterns</li>
-          <li>Natural language processing for querying metrics data</li>
-          <li>Prediction of resource needs based on historical patterns</li>
-          <li>Recommendation engine for VM right-sizing</li>
+          <li>Synthetic CPU/memory/disk/network metrics generation with injectable anomaly scenarios</li>
+          <li>Pure rule-based anomaly detection (thresholds + rolling-average spike detection), independent of any AI call</li>
+          <li>LLM-generated diagnostic narrative (summary, per-subsystem diagnostics, issues, recommendations) with a deterministic rule-based fallback</li>
+          <li>Multi-VM comparative analysis to spot outliers across hosts</li>
+          <li>Interactive Plotly dashboards, SQLite-backed analysis history, and disk-based caching</li>
+          <li>Downloadable PDF report export</li>
         </ul>
-        <p>This tool identified optimization opportunities that resulted in a 30% reduction in cloud infrastructure costs.</p>
       </div>
       <div class="modal-project-tech">
         <h4>Technologies Used:</h4>
         <div class="project-techs">
           <span>Python</span>
           <span>Streamlit</span>
-          <span>Azure OpenAI</span>
+          <span>OpenAI API</span>
           <span>Docker</span>
           <span>Pandas</span>
           <span>Plotly</span>
         </div>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/paraggupta10/cortex-vm-analyzer" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Code on GitHub</a>
       </div>
     </div>
     
