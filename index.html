@@ -748,18 +748,21 @@
           </div>
         </div>
 
-        <div class="project-card" data-category="ai automation" data-id="ansible">
+        <div class="project-card" data-category="ai automation" data-id="lens">
           <div class="project-img">
-            <img src="images/ansible_automation.svg" alt="Ansible Automation">
+            <img src="images/ai-assistant.jpg" alt="Lens Multi-Agent Monitoring Assistant">
           </div>
           <div class="project-info">
-            <h3>Ansible Automation Assistant</h3>
-            <p>Natural language to Ansible playbook conversion platform with interactive editing and execution features.</p>
+            <h3>Lens: Multi-Agent Monitoring Assistant</h3>
+            <p>Natural-language investigation console over synthetic telemetry: coordinator routing, dual basic/expert model tiers, and autonomous cross-agent collaboration, with a full offline rule-based fallback.</p>
             <div class="project-techs">
               <span>Python</span>
               <span>Streamlit</span>
-              <span>OpenAI</span>
-              <span>Ansible</span>
+              <span>OpenAI API</span>
+              <span>Multi-Agent</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/paraggupta10/lens" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Code</a>
             </div>
             <button class="project-details-btn">View Details</button>
           </div>
@@ -1012,34 +1015,35 @@
       </div>
     </div>
     
-    <!-- Ansible Automation Assistant -->
-    <div data-project="ansible">
+    <!-- Lens: Multi-Agent Monitoring Assistant -->
+    <div data-project="lens">
       <div class="modal-project-img">
-        <img src="images/ansible_automation.svg" alt="Ansible Automation Assistant">
+        <img src="images/ai-assistant.jpg" alt="Lens Multi-Agent Monitoring Assistant">
       </div>
-      <h3>Ansible Automation Assistant</h3>
+      <h3>Lens: Multi-Agent Monitoring Assistant</h3>
       <div class="modal-project-description">
-        <p>A platform that converts natural language instructions into executable Ansible playbooks. Key capabilities include:</p>
+        <p>A natural-language chat interface over a synthetic multi-system service: instead of manually querying logs, metrics, a document store, a data-store performance advisor, and infrastructure/APM data in separate tools, a coordinator routes the question to the right specialist agent(s) and shows its full reasoning. Key capabilities include:</p>
         <ul>
-          <li>Natural language processing to understand automation requirements</li>
-          <li>Automatic generation of Ansible playbooks from text descriptions</li>
-          <li>Interactive editing and validation of generated playbooks</li>
-          <li>Integration with existing Ansible inventory and variables</li>
-          <li>Execution tracking and reporting</li>
-          <li>Knowledge base of common automation patterns</li>
+          <li>Five specialist agents (logs, metrics, document store, data-store performance, infrastructure), each with basic and expert tiers</li>
+          <li>Pure heuristic query classification (zero AI dependency) deciding domain routing and basic-vs-expert tier</li>
+          <li>Autonomous cross-agent collaboration: expert agents can consult one peer agent for corroborating evidence via OpenAI function-calling, capped at one hop</li>
+          <li>Full investigation transparency -- every agent's findings, data checked, and cross-agent consultations are shown, not hidden behind a black-box answer</li>
+          <li>A fully deterministic rule-based fallback for every layer (routing, tiering, all five agents, cross-agent collaboration) so the entire pipeline works with zero AI calls</li>
+          <li>SQLite-backed investigation history and disk-based result caching</li>
         </ul>
-        <p>This tool enabled non-technical teams to implement infrastructure automation, reducing the time to automate common tasks by 80%.</p>
       </div>
       <div class="modal-project-tech">
         <h4>Technologies Used:</h4>
         <div class="project-techs">
           <span>Python</span>
           <span>Streamlit</span>
-          <span>OpenAI</span>
-          <span>Ansible</span>
-          <span>Flask</span>
-          <span>YAML</span>
+          <span>OpenAI API</span>
+          <span>SQLite</span>
+          <span>Docker</span>
         </div>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/paraggupta10/lens" target="_blank" rel="noopener"><i class="fab fa-github"></i> View Code on GitHub</a>
       </div>
     </div>
     
