@@ -1,0 +1,112 @@
+---
+const base = import.meta.env.BASE_URL;
+
+const projects = [
+  {
+    title: "AIOps Root Cause Analysis (Patent Pending)",
+    image: "images/aiops.jpg",
+    description:
+      "AI-powered system that fuses metrics, logs, and traces into unified structures for intelligent root cause analysis with continuous learning capabilities.",
+    tech: ["AI/ML", "Graph Neural Networks", "Bayesian Networks", "Patent"],
+    links: [{ label: "Read the Write-up", href: `${base}blog/filing-my-first-patent-application/` }],
+  },
+  {
+    title: "Kubernetes HA Cluster",
+    image: "images/kubernetes.jpg",
+    description:
+      "3-master-node highly-available Kubernetes cluster on CentOS: etcd clustering, Flannel overlay networking, and leader-election for the control plane. Documented in a published blog post.",
+    tech: ["Kubernetes", "CentOS", "Docker", "etcd", "Flannel"],
+    links: [
+      {
+        label: "Read the Blog Post",
+        href: "https://www.tothenew.com/blog/how-to-setup-kubernetes-master-ha-on-centos/",
+      },
+    ],
+  },
+  {
+    title: "Infrastructure as Code",
+    image: "images/terraform.jpg",
+    description:
+      "Published, public Terraform module that declaratively manages MongoDB collection indexes from a YAML file - filling a real gap left by the official Atlas provider - with unit tests, a live-database integration test, and CI on every push.",
+    tech: ["Terraform", "Python", "MongoDB", "GitHub Actions"],
+    links: [
+      { label: "View Code", href: "https://github.com/paraggupta10/terraform-mongodbatlas-indexes" },
+      { label: "Terraform Registry", href: "https://registry.terraform.io/modules/paraggupta10/indexes/mongodbatlas/latest" },
+    ],
+  },
+  {
+    title: "Distributed Tracing Platform Rollout",
+    image: "images/monitoring.jpg",
+    description:
+      "Built the reference implementation and onboarding runbook for zero-code distributed tracing across a Java microservices platform, adopted org-wide as the standard integration pattern.",
+    tech: ["OpenTelemetry", "Kubernetes", "Grafana Tempo", "GitOps"],
+    links: [{ label: "Read the Write-up", href: `${base}blog/rolling-out-zero-code-distributed-tracing/` }],
+  },
+  {
+    title: "Cortex VM Analyzer",
+    image: "images/cortex-vm.jpg",
+    description:
+      "AI-based root cause analysis that compares an unhealthy VM's metrics -- down to the process level -- against a healthy peer to isolate a resource bottleneck, memory leak, or infra issue before app-level debugging.",
+    tech: ["Python", "Streamlit", "OpenAI API", "Docker"],
+    links: [
+      { label: "View Code", href: "https://github.com/paraggupta10/cortex-vm-analyzer" },
+      { label: "Read the Write-up", href: `${base}blog/finding-the-process-behind-a-noisy-vm/` },
+    ],
+  },
+  {
+    title: "Lens: Multi-Agent Monitoring Assistant",
+    image: "images/ansible_automation.svg",
+    description:
+      "Single natural-language interface replacing manual metrics/logs/database investigation across separate tools: coordinator-based routing and autonomous cross-agent collaboration, built on Google's Agent Development Kit (ADK) and not locked to one LLM provider.",
+    tech: ["Python", "Google ADK", "LiteLLM", "Multi-Agent"],
+    links: [
+      { label: "View Code", href: "https://github.com/paraggupta10/lens" },
+      { label: "Read the Write-up", href: `${base}blog/one-chat-interface-instead-of-five-tools/` },
+    ],
+  },
+  {
+    title: "Cloud Cost Optimization",
+    image: "images/cost-optimization.jpg",
+    description:
+      "Reserved-capacity planning for DynamoDB, traffic-aware rightsizing for Aerospike, and a unified multi-cloud cost dashboard -- three initiatives covered in a full write-up.",
+    tech: ["AWS", "Azure", "DynamoDB", "Aerospike"],
+    links: [{ label: "Read the Write-up", href: `${base}blog/cloud-cost-optimization-three-initiatives/` }],
+  },
+];
+---
+
+<section class="section" id="projects">
+  <div class="wrapper">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-grid">
+      {
+        projects.map((project) => (
+          <div class="project-card">
+            <div class="project-card-img">
+              <img src={`${base}${project.image}`} alt={project.title} loading="lazy" />
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">{project.title}</h3>
+              <p class="project-desc">{project.description}</p>
+              <ul class="project-tech">
+                {project.tech.map((t) => <li>{t}</li>)}
+              </ul>
+              {project.links.length > 0 ? (
+                <div class="project-links">
+                  {project.links.map((link) => (
+                    <a href={link.href} target="_blank" rel="noopener noreferrer">
+                      {link.label} &rarr;
+                    </a>
+                  ))}
+                </div>
+              ) : (
+                <p class="project-no-link">No public link — no external evidence available</p>
+              )}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

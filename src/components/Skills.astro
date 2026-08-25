@@ -1,0 +1,70 @@
+---
+const categories = [
+  {
+    name: "Cloud & Infrastructure",
+    skills: [
+      "AWS",
+      "GCP",
+      "Azure",
+      "Alibaba Cloud",
+      "OpenStack",
+      "KVM/QEMU/Libvirt",
+      "CentOS",
+      "Linux (Ubuntu/CentOS) administration",
+      "Networking/DNS/SSH/system hardening",
+      "etcd",
+      "Flannel",
+      "Vault",
+      "OpenVPN",
+    ],
+  },
+  {
+    name: "Containers & Orchestration",
+    skills: ["Kubernetes", "Docker", "Istio", "API Gateway"],
+  },
+  {
+    name: "Configuration Management & IaC",
+    skills: ["Terraform", "Ansible", "Puppet", "SaltStack"],
+  },
+  {
+    name: "CI/CD & DevOps Automation",
+    skills: ["Jenkins", "ArgoCD", "Airflow"],
+  },
+  {
+    name: "Monitoring & Observability",
+    skills: [
+      "Prometheus/Grafana-style observability",
+      "New Relic",
+      "Splunk",
+      "ELK Stack",
+      "Jaeger",
+      "OpenTelemetry",
+    ],
+  },
+  {
+    name: "Databases & Messaging",
+    skills: ["MySQL", "PostgreSQL", "MongoDB", "Aerospike", "Redis", "SQLite", "Kafka"],
+  },
+  {
+    name: "Languages & AI Tooling",
+    skills: ["Python", "Streamlit", "OpenAI API", "MCP"],
+  },
+];
+---
+
+<section class="section" id="skills">
+  <div class="wrapper">
+    <h2 class="section-title">Skills</h2>
+
+    {
+      categories.map((category) => (
+        <div class="skills-tier">
+          <h3>{category.name}</h3>
+          <ul class="skill-tags">
+            {category.skills.map((skill) => <li class="skill-tag">{skill}</li>)}
+          </ul>
+        </div>
+      ))
+    }
+  </div>
+</section>

@@ -1,0 +1,193 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+  "basics": {
+    "name": "Parag Gupta",
+    "label": "DevOps Engineer / Site Reliability Engineer",
+    "email": "gupta.parag@outlook.com",
+    "url": "https://paraggupta10.github.io/",
+    "summary": "Building resilient infrastructure and automation — from Kubernetes clusters to AI-augmented observability tooling.",
+    "location": {
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "paraggupta10",
+        "url": "https://github.com/paraggupta10"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "parag-gupta10",
+        "url": "https://linkedin.com/in/parag-gupta10"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Adobe",
+      "position": "Computer Scientist II / I",
+      "location": "Noida, India",
+      "startDate": "2021-12-01",
+      "endDate": null,
+      "highlights": [
+        "Built Lens, a Google ADK-based multi-agent assistant that replaces manual Cortex metrics, Splunk log, and MongoDB slow-query/cluster investigation with a single chat interface, using automatic query routing and cross-agent collaboration for AI-driven root cause analysis.",
+        "Rolled out zero-code distributed tracing across a Java microservices platform on Kubernetes, and authored the onboarding runbook adopted org-wide as the standard integration pattern.",
+        "Led tech stack consolidation across environments, achieving $376K in annual cloud savings.",
+        "Developed modular Terraform components that automated multi-environment provisioning, cutting setup time from days to hours."
+      ]
+    },
+    {
+      "name": "Media.net",
+      "position": "Site Reliability Engineer",
+      "location": "Bangalore, India",
+      "startDate": "2021-02-01",
+      "endDate": "2021-12-01",
+      "highlights": [
+        "Designed and deployed an on-premises Kubernetes cluster as a secure, multi-tenant CaaS platform, enabling teams to onboard quickly.",
+        "Modernized infrastructure monitoring and implemented a service mesh to enable secure service discovery and simplify application deployment workflows."
+      ]
+    },
+    {
+      "name": "Tokopedia",
+      "position": "Senior Engineer DataOps",
+      "location": "Noida, India",
+      "startDate": "2019-10-01",
+      "endDate": "2021-02-01",
+      "highlights": [
+        "Designed a secure hybrid cloud network (GCP + Alibaba) with Vault-based secrets management, granular access controls, and full-stack logging.",
+        "Reduced GCP expenses by 30-40% through workload rightsizing, storage optimization, and VM lifecycle automation."
+      ]
+    },
+    {
+      "name": "Paytm",
+      "position": "Engineer DevOps",
+      "location": "Noida, India",
+      "startDate": "2017-12-01",
+      "endDate": "2019-10-01",
+      "highlights": [
+        "Built and operated a 4,000-core OpenStack cluster for the payments QA environment, and deployed a 50TB Elasticsearch cluster to manage high-throughput user data.",
+        "Automated infrastructure provisioning and config management using Salt and Ansible, reducing deployment errors by 85%."
+      ]
+    },
+    {
+      "name": "TO THE NEW",
+      "position": "Engineer DevOps",
+      "location": "Noida, India",
+      "startDate": "2016-06-01",
+      "endDate": "2017-12-01",
+      "highlights": [
+        "Designed and containerized application architecture for GRAILS and Angular apps, implementing CI/CD pipelines with Jenkins and orchestrating deployments using Kubernetes.",
+        "Built the highly-available Kubernetes cluster later documented in a published blog post, plus automated backups, DR pipelines, and centralized EFK logging."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "UPTU",
+      "studyType": "B.Tech",
+      "area": "Information Technology",
+      "startDate": "2012-08-01",
+      "endDate": "2016-06-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Cloud & Infrastructure",
+      "keywords": [
+        "AWS",
+        "GCP",
+        "Azure",
+        "Alibaba Cloud",
+        "OpenStack",
+        "KVM/QEMU/Libvirt",
+        "CentOS",
+        "Linux (Ubuntu/CentOS) administration",
+        "Networking/DNS/SSH/system hardening",
+        "etcd",
+        "Flannel",
+        "Vault",
+        "OpenVPN"
+      ]
+    },
+    {
+      "name": "Containers & Orchestration",
+      "keywords": ["Kubernetes", "Docker", "Istio", "API Gateway"]
+    },
+    {
+      "name": "Configuration Management & IaC",
+      "keywords": ["Terraform", "Ansible", "Puppet", "SaltStack"]
+    },
+    {
+      "name": "CI/CD & DevOps Automation",
+      "keywords": ["Jenkins", "ArgoCD", "Airflow"]
+    },
+    {
+      "name": "Monitoring & Observability",
+      "keywords": [
+        "Prometheus/Grafana-style observability",
+        "New Relic",
+        "Splunk",
+        "ELK Stack",
+        "Jaeger",
+        "OpenTelemetry"
+      ]
+    },
+    {
+      "name": "Databases & Messaging",
+      "keywords": ["MySQL", "PostgreSQL", "MongoDB", "Aerospike", "Redis", "SQLite", "Kafka"]
+    },
+    {
+      "name": "Languages & AI Tooling",
+      "keywords": ["Python", "Streamlit", "OpenAI API", "MCP"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "AIOps Root Cause Analysis (Patent Pending)",
+      "description": "AI-powered system that fuses metrics, logs, and traces into unified structures for intelligent root cause analysis with continuous learning capabilities.",
+      "keywords": ["AI/ML", "Graph Neural Networks", "Bayesian Networks", "Patent"],
+      "url": "https://paraggupta10.github.io/blog/filing-my-first-patent-application/"
+    },
+    {
+      "name": "Kubernetes HA Cluster",
+      "description": "3-master-node highly-available Kubernetes cluster on CentOS: etcd clustering, Flannel overlay networking, and leader-election for the control plane. Documented in a published blog post.",
+      "keywords": ["Kubernetes", "CentOS", "Docker", "etcd", "Flannel"],
+      "url": "https://www.tothenew.com/blog/how-to-setup-kubernetes-master-ha-on-centos/"
+    },
+    {
+      "name": "Infrastructure as Code",
+      "description": "Published, public Terraform module that declaratively manages MongoDB collection indexes from a YAML file - filling a real gap left by the official Atlas provider - with unit tests, a live-database integration test, and CI on every push.",
+      "keywords": ["Terraform", "Python", "MongoDB", "GitHub Actions"],
+      "url": "https://github.com/paraggupta10/terraform-mongodbatlas-indexes"
+    },
+    {
+      "name": "Distributed Tracing Platform Rollout",
+      "description": "Built the reference implementation and onboarding runbook for zero-code distributed tracing across a Java microservices platform, adopted org-wide as the standard integration pattern.",
+      "keywords": ["OpenTelemetry", "Kubernetes", "Grafana Tempo", "GitOps"],
+      "url": "https://paraggupta10.github.io/blog/rolling-out-zero-code-distributed-tracing/"
+    },
+    {
+      "name": "Cortex VM Analyzer",
+      "description": "AI-based root cause analysis that compares an unhealthy VM's metrics -- down to the process level -- against a healthy peer to isolate a resource bottleneck, memory leak, or infra issue before app-level debugging.",
+      "keywords": ["Python", "Streamlit", "OpenAI API", "Docker"],
+      "url": "https://github.com/paraggupta10/cortex-vm-analyzer"
+    },
+    {
+      "name": "Lens: Multi-Agent Monitoring Assistant",
+      "description": "Single natural-language interface replacing manual metrics/logs/database investigation across separate tools: coordinator-based routing and autonomous cross-agent collaboration, built on Google's Agent Development Kit (ADK) and not locked to one LLM provider.",
+      "keywords": ["Python", "Google ADK", "LiteLLM", "Multi-Agent"],
+      "url": "https://github.com/paraggupta10/lens"
+    },
+    {
+      "name": "Cloud Cost Optimization",
+      "description": "Reserved-capacity planning for DynamoDB, traffic-aware rightsizing for Aerospike, and a unified multi-cloud cost dashboard -- three initiatives covered in a full write-up.",
+      "keywords": ["AWS", "Azure", "DynamoDB", "Aerospike"],
+      "url": "https://paraggupta10.github.io/blog/cloud-cost-optimization-three-initiatives/"
+    }
+  ],
+  "awards": [],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+    "version": "v1.0.0"
+  }
+}

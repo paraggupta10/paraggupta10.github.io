@@ -1,0 +1,52 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { getReadingTime } from "../../lib/readingTime";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const base = import.meta.env.BASE_URL;
+
+const dateFormatter = new Intl.DateTimeFormat("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+
+const readingTimeLabel = getReadingTime(post.body ?? "");
+const title = `${post.data.title} — Parag Gupta`;
+---
+
+<BaseLayout title={title} description={post.data.excerpt}>
+  <Header />
+  <main>
+    <article class="section post-content">
+      <div class="wrapper">
+        <h1>{post.data.title}</h1>
+        <div class="post-meta-row">
+          <span>{dateFormatter.format(post.data.date)}</span>
+          <span>&middot;</span>
+          <span>{readingTimeLabel}</span>
+        </div>
+        <div class="post-tags">
+          {post.data.tags.map((tag: string) => <span class="post-tag">{tag}</span>)}
+        </div>
+
+        <Content />
+
+        <a class="back-link" href={`${base}blog/`}>&larr; Back to all posts</a>
+      </div>
+    </article>
+  </main>
+  <Footer />
+</BaseLayout>

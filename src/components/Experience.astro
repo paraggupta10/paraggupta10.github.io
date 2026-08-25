@@ -1,0 +1,136 @@
+---
+const jobs = [
+  {
+    role: "Computer Scientist II / I",
+    org: "Adobe",
+    period: "Dec 2021 – Present",
+    location: "Noida, India",
+    bullets: [
+      "Built Lens, a Google ADK-based multi-agent assistant that replaces manual Cortex metrics, Splunk log, and MongoDB slow-query/cluster investigation with a single chat interface, using automatic query routing and cross-agent collaboration for AI-driven root cause analysis.",
+      "Rolled out zero-code distributed tracing across a Java microservices platform on Kubernetes, and authored the onboarding runbook adopted org-wide as the standard integration pattern.",
+      "Led tech stack consolidation across environments, achieving $376K in annual cloud savings.",
+      "Developed modular Terraform components that automated multi-environment provisioning, cutting setup time from days to hours.",
+    ],
+  },
+  {
+    role: "Site Reliability Engineer",
+    org: "Media.net",
+    period: "Feb 2021 – Dec 2021",
+    location: "Bangalore, India",
+    bullets: [
+      "Designed and deployed an on-premises Kubernetes cluster as a secure, multi-tenant CaaS platform, enabling teams to onboard quickly.",
+      "Modernized infrastructure monitoring and implemented a service mesh to enable secure service discovery and simplify application deployment workflows.",
+    ],
+  },
+  {
+    role: "Senior Engineer DataOps",
+    org: "Tokopedia",
+    period: "Oct 2019 – Feb 2021",
+    location: "Noida, India",
+    bullets: [
+      "Designed a secure hybrid cloud network (GCP + Alibaba) with Vault-based secrets management, granular access controls, and full-stack logging.",
+      "Reduced GCP expenses by 30-40% through workload rightsizing, storage optimization, and VM lifecycle automation.",
+    ],
+  },
+  {
+    role: "Engineer DevOps",
+    org: "Paytm",
+    period: "Dec 2017 – Oct 2019",
+    location: "Noida, India",
+    bullets: [
+      "Built and operated a 4,000-core OpenStack cluster for the payments QA environment, and deployed a 50TB Elasticsearch cluster to manage high-throughput user data.",
+      "Automated infrastructure provisioning and config management using Salt and Ansible, reducing deployment errors by 85%.",
+    ],
+  },
+  {
+    role: "Engineer DevOps",
+    org: "TO THE NEW",
+    period: "Jun 2016 – Dec 2017",
+    location: "Noida, India",
+    bullets: [
+      "Designed and containerized application architecture for GRAILS and Angular apps, implementing CI/CD pipelines with Jenkins and orchestrating deployments using Kubernetes.",
+      "Built the highly-available Kubernetes cluster later documented in a published blog post, plus automated backups, DR pipelines, and centralized EFK logging.",
+    ],
+  },
+];
+---
+
+<section class="section" id="experience">
+  <div class="wrapper">
+    <h2 class="section-title">Work Experience</h2>
+
+    <div class="timeline">
+      {
+        jobs.map((job) => (
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-marker" aria-hidden="true" />
+            <div class="job">
+              <div class="job-header">
+                <p class="job-role">{job.role}</p>
+                <span class="job-meta">{job.period} &middot; {job.location}</span>
+              </div>
+              <p class="job-org">{job.org}</p>
+              <ul>
+                {job.bullets.map((bullet) => <li>{bullet}</li>)}
+              </ul>
+            </div>
+          </div>
+        ))
+      }
+
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-marker" aria-hidden="true" />
+        <div class="job">
+          <div class="job-header">
+            <p class="job-role">B.Tech in Information Technology</p>
+            <span class="job-meta">Aug 2012 – Jun 2016</span>
+          </div>
+          <p class="job-org">UPTU</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<noscript>
+  <style>
+    /* If JS never runs at all, content must still be visible -- the
+       reveal animation is a progressive enhancement, not a gate. */
+    .timeline-item {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  </style>
+</noscript>
+
+<script>
+  // Content must be visible immediately regardless of scroll position --
+  // it must never require the user to scroll an item into view before
+  // they can read it. So this reveals every item shortly after each page
+  // load with a brief staggered fade-in, instead of gating visibility on
+  // IntersectionObserver (which only reveals an item once it's scrolled
+  // into the viewport, leaving anything below the fold blank until then).
+  //
+  // Re-runs on every navigation (initial load AND every subsequent
+  // client-side transition triggered by Astro's <ClientRouter />) via the
+  // astro:page-load event, which fires in both cases -- a plain top-level
+  // script here would only ever fire once on the very first hard load,
+  // since browsers don't re-execute an already-loaded module.
+  function initTimelineReveal() {
+    const items = document.querySelectorAll("[data-reveal]");
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    items.forEach((el, i) => {
+      if (prefersReducedMotion) {
+        el.classList.add("is-visible");
+        return;
+      }
+      const delay = Math.min(i * 60, 300);
+      window.setTimeout(() => el.classList.add("is-visible"), delay);
+    });
+  }
+
+  document.addEventListener("astro:page-load", initTimelineReveal);
+</script>

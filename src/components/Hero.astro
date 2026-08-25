@@ -1,0 +1,34 @@
+---
+import { SOCIAL_LINKS } from "../consts";
+const base = import.meta.env.BASE_URL;
+---
+
+<section class="section" id="intro">
+  <div class="wrapper">
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Parag Gupta</h1>
+        <p class="hero-tagline">DevOps Engineer &middot; Site Reliability Engineer</p>
+        <p class="hero-desc">
+          Building resilient infrastructure and automation — from Kubernetes
+          clusters to AI-augmented observability tooling.
+        </p>
+      </div>
+      <div class="hero-photo-frame">
+        <img class="hero-photo" src={`${base}profile.jpg`} alt="Photo of Parag Gupta" />
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <a class="btn btn-primary" href="#contact">Contact</a>
+      <a class="btn" href={`${base}resume.pdf`}>Resume</a>
+      <a class="btn" href={`${base}blog/`}>Read the Blog</a>
+    </div>
+
+    <div class="social-row">
+      <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href={`mailto:${SOCIAL_LINKS.email}`}>Email</a>
+    </div>
+  </div>
+</section>

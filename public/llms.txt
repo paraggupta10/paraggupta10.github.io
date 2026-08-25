@@ -1,0 +1,34 @@
+# Parag Gupta
+
+> DevOps Engineer / Site Reliability Engineer. Building resilient
+> infrastructure and automation — from Kubernetes clusters to AI-augmented
+> observability tooling.
+
+Parag Gupta is a DevOps/SRE engineer currently a Computer Scientist at Adobe
+(Dec 2021–present), with prior roles at Media.net, Tokopedia, Paytm, and
+TO THE NEW. Background spans Kubernetes, Terraform, Ansible, multi-cloud
+infrastructure (AWS, GCP, Azure, Alibaba Cloud), and, more recently,
+AI-augmented observability tooling. Active open-source contributor, with a
+merged fix in systemd.
+
+## Profile
+
+- Portfolio: https://paraggupta10.github.io/
+- GitHub: https://github.com/paraggupta10
+- LinkedIn: https://linkedin.com/in/parag-gupta10
+- Email: gupta.parag@outlook.com
+- JSON Resume (structured data): https://paraggupta10.github.io/resume.json
+
+## Projects
+
+- Cortex VM Analyzer — AI-based root cause analysis comparing an unhealthy VM's metrics, down to the process level, against a healthy peer: https://github.com/paraggupta10/cortex-vm-analyzer
+- Lens: Multi-Agent Monitoring Assistant — Google ADK-based multi-agent assistant replacing manual metrics/logs/database investigation with a single chat interface: https://github.com/paraggupta10/lens
+- terraform-mongodbatlas-indexes — public Terraform module for declarative MongoDB Atlas index management: https://github.com/paraggupta10/terraform-mongodbatlas-indexes (also on the Terraform Registry: https://registry.terraform.io/modules/paraggupta10/indexes/mongodbatlas/latest)
+- Kubernetes HA Cluster — 3-master-node HA Kubernetes cluster on CentOS, documented in a published blog post: https://www.tothenew.com/blog/how-to-setup-kubernetes-master-ha-on-centos/
+- Distributed Tracing Platform Rollout — zero-code distributed tracing across a Java microservices platform, adopted org-wide as the standard integration pattern
+- Open source contribution — merged fix to systemd adding zsh shell-completion support for `systemctl show`: https://github.com/systemd/systemd/pull/43500
+
+## Blog
+
+- All posts: https://paraggupta10.github.io/blog/
+- RSS feed: https://paraggupta10.github.io/rss.xml

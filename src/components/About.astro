@@ -1,0 +1,51 @@
+---
+const base = import.meta.env.BASE_URL;
+
+const facts = [
+  { label: "Location", value: "Noida, India" },
+  { label: "Experience", value: "10+ years, DevOps & SRE" },
+  { label: "Currently", value: "Computer Scientist II, Adobe" },
+  { label: "Focus", value: "Kubernetes, observability, cost & reliability engineering" },
+];
+---
+
+<section class="section" id="about">
+  <div class="wrapper">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a DevOps / Site Reliability Engineer with over a decade of experience
+          building and operating infrastructure for high-traffic platforms — from
+          bare-metal Kubernetes clusters to fully managed environments across AWS,
+          Azure, and GCP. My focus has consistently been on the intersection of
+          reliability and automation: reducing manual toil, shortening incident
+          response, and making systems cheaper to run without making them fragile.
+        </p>
+        <p>
+          At Adobe, that has meant building AI-augmented observability tooling to
+          cut MTTR, leading cost-optimization initiatives across multiple cloud and
+          database platforms, and rolling out distributed tracing as a zero-code,
+          org-wide pattern. Earlier roles took me through Kubernetes-based CaaS
+          platforms, hybrid-cloud networking, and large-scale OpenStack and
+          Elasticsearch deployments.
+        </p>
+        <p>
+          I have a patent application pending with the USPTO for an AI-driven
+          observability root-cause-analysis system, I'm an active open-source
+          contributor, and I write about the work on <a href={`${base}blog/`}>this blog</a> when there's something worth sharing.
+        </p>
+      </div>
+      <dl class="about-facts">
+        {
+          facts.map((fact) => (
+            <div class="about-fact">
+              <dt>{fact.label}</dt>
+              <dd>{fact.value}</dd>
+            </div>
+          ))
+        }
+      </dl>
+    </div>
+  </div>
+</section>

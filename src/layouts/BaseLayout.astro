@@ -1,0 +1,82 @@
+---
+import "../styles/global.css";
+import { ClientRouter } from "astro:transitions";
+import {
+  SITE_TITLE,
+  SITE_DESCRIPTION,
+  SITE_URL,
+  AUTHOR_NAME,
+  SOCIAL_LINKS,
+} from "../consts";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: AUTHOR_NAME,
+  jobTitle: "DevOps Engineer / Site Reliability Engineer",
+  url: SITE_URL,
+  sameAs: [SOCIAL_LINKS.github, SOCIAL_LINKS.linkedin],
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script is:inline>
+      (function () {
+        function applyStoredTheme(root) {
+          try {
+            var stored = localStorage.getItem("theme");
+            root.setAttribute("data-theme", stored === "light" ? "light" : "dark");
+          } catch (e) {}
+        }
+        applyStoredTheme(document.documentElement);
+        // Astro's <ClientRouter /> swaps in a server-rendered document that
+        // has no data-theme attribute, so a soft navigation would otherwise
+        // reset the theme to default. Re-apply it to the incoming document
+        // before the swap happens (same fix shape as the timeline reveal).
+        if (!window.__themeSwapBound) {
+          window.__themeSwapBound = true;
+          document.addEventListener("astro:before-swap", function (event) {
+            applyStoredTheme(event.newDocument.documentElement);
+          });
+        }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌁</text></svg>" />
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="sitemap" href={`${import.meta.env.BASE_URL}sitemap-index.xml`} />
+    <link rel="alternate" type="application/rss+xml" title={SITE_TITLE} href={`${SITE_URL}${import.meta.env.BASE_URL}rss.xml`} />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <ClientRouter />
+
+    <script type="application/ld+json" set:html={JSON.stringify(personJsonLd)} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
